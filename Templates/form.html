@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+        <div class="form-group">
+            <label for="name"><strong>Name</strong></label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="idno"><strong>ID Number</strong></label>
+            <input type="text" class="form-control" name="idno" placeholder="Enter your ID Number" required>
+        </div> 
+        <label for="branch"><strong>Branch</strong></label>
+        <select name="branch" required>
+            <option value="">Select your Branch</option>
+            <option value="Computer Science Engineering">Computer Science Engineering</option>
+            <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+            <option value="Electronics and Instrumentation Engineering">Electronics and Instrumentation Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option> 
+        </select><br><br>      
+        
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="button" type="submit" style="vertical-align: middle"><span>Submit</span></button>
+
+    </form>
+
+    <script>
+
+        /* TODO */
+
+    </script>
+
+{% endblock %}
